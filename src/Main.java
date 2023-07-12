@@ -4,37 +4,23 @@ public class Main {
     public static void main(String[] args) {
         FractalMusicService fractalMusicService = new FractalMusicService();
 
-        System.out.print("Welcome to the Fractal-Music-Super-Inator-3000. \n");
-        System.out.print("While the randomly generated music does not intentionally infringe upon any specific " +
-                "copyrights or intellectual property rights, it's essential to be aware of the potential legal and ethical implications. " +
-                "If you plan to use the generated music in any public or commercial context, it's advisable to consult a legal professional. \n");
+        System.out.println("Welcome to the Fractal-Music-Super-Inator-3000.");
+        System.out.println("Please note the randomly generated music does not intentionally infringe upon any specific copyrights.");
 
         try (Scanner scanner = new Scanner(System.in)) {
             System.out.print("Would you like to use default parameters? (Y/N): ");
             String defaultChoice = scanner.next();
 
-            int rootNote, octaves, iterations;
-            double displacement, duration;
-
-            if (defaultChoice.equalsIgnoreCase("Y")) {
-                // Define default parameters
-                rootNote = 60;
-                octaves = 7;
-                displacement = 2;
-                duration = 2;
-                iterations = 2;
-            } else {
-                System.out.print("Enter the root note (0-127): ");
-                rootNote = scanner.nextInt();
-                System.out.print("Enter the number of octaves (1-7): ");
-                octaves = scanner.nextInt();
-                System.out.print("Enter the displacement factor (0-24): ");
-                displacement = scanner.nextDouble();
-                System.out.print("Enter the duration factor (1-24): ");
-                duration = scanner.nextDouble();
-                System.out.print("Enter the number of iterations: ");
-                iterations = scanner.nextInt();
-            }
+            int rootNote = defaultChoice.equalsIgnoreCase("Y") ? 60 :
+                    validateInput(scanner, "Enter the root note (0-127): ", 0, 127);
+            int octaves = defaultChoice.equalsIgnoreCase("Y") ? 6 :
+                    validateInput(scanner, "Enter the number of octaves (1-7): ", 1, 7);
+            double displacement = defaultChoice.equalsIgnoreCase("Y") ? 2 :
+                    validateInput(scanner, "Enter the displacement factor (0-24): ", 0, 24);
+            double duration = defaultChoice.equalsIgnoreCase("Y") ? 2 :
+                    validateInput(scanner, "Enter the duration factor (1-24): ", 1, 24);
+            int iterations = defaultChoice.equalsIgnoreCase("Y") ? 1 :
+                    validateInput(scanner, "Enter the number of iterations (0-100) (but keep it low to start): ", 0, 100);
 
             fractalMusicService.generateAndPlayFractalMusic(rootNote, octaves, displacement, duration, iterations);
 
@@ -50,6 +36,18 @@ public class Main {
             }
         } catch (Exception e) {
             e.printStackTrace();
+        }
+    }
+
+    private static int validateInput(Scanner scanner, String msg, int start, int end) {
+        while (true) {
+            System.out.print(msg);
+            int input = scanner.nextInt();
+            if (input >= start && input <= end) {
+                return input;
+            } else {
+                System.out.println("Invalid input!");
+            }
         }
     }
 }

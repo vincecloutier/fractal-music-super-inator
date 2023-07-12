@@ -9,7 +9,9 @@ public class FractalMusicGenerator {
 
         // Generate the fractal pattern
         for (int i = 1; i < totalNotes; i++) {
-            notes[i] = (int) (notes[i - 1] + Math.random() * displacement * 2 - displacement);
+            int nextNote = (int) (notes[i - 1] + Math.random() * displacement * 2 - displacement);
+            nextNote = Math.max(0, Math.min(127, nextNote)); // ensure note is within valid MIDI range
+            notes[i] = nextNote;
         }
 
         // Create a new sequence and a track

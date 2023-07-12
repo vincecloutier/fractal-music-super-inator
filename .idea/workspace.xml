@@ -4,9 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="13887364-90ae-4abf-a92d-f626d73c3266" name="Changes" comment="clean architecture">
+    <list default="true" id="13887364-90ae-4abf-a92d-f626d73c3266" name="Changes" comment="added default paramaters">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/FractalMusicService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/FractalMusicService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/FractalMusicGenerator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/FractalMusicGenerator.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -51,7 +51,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1689177138145</updated>
-      <workItem from="1689177139168" duration="1955000" />
+      <workItem from="1689177139168" duration="2900000" />
     </task>
     <task id="LOCAL-00001" summary="now playing well">
       <created>1689177662052</created>
@@ -67,7 +67,14 @@
       <option name="project" value="LOCAL" />
       <updated>1689178367385</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="added default paramaters">
+      <created>1689179143598</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1689179143598</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -76,6 +83,7 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="now playing well" />
     <MESSAGE value="clean architecture" />
-    <option name="LAST_COMMIT_MESSAGE" value="clean architecture" />
+    <MESSAGE value="added default paramaters" />
+    <option name="LAST_COMMIT_MESSAGE" value="added default paramaters" />
   </component>
 </project>
