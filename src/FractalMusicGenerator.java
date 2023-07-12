@@ -3,6 +3,7 @@ import javax.sound.midi.*;
 public class FractalMusicGenerator {
     public Sequence generateFractalMusic(int rootNote, int octaves, double displacement, double duration, int iterations) throws InvalidMidiDataException {
         int totalNotes = (int) Math.pow(2, octaves);
+        totalNotes = Math.max(1, totalNotes);  // Ensure totalNotes is at least 1
 
         int[] notes = new int[totalNotes];
         notes[0] = rootNote;

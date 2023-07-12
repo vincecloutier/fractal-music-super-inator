@@ -6,23 +6,19 @@ public class Main {
 
         System.out.println("Welcome to the Fractal-Music-Super-Inator-3000.");
         System.out.println("Please note the randomly generated music does not intentionally infringe upon any specific copyrights.");
+        System.out.println("Just leave any prompt blank for a default value.");
 
         try (Scanner scanner = new Scanner(System.in)) {
-            System.out.print("Would you like to use default parameters? (Y/N): ");
-            String defaultChoice = scanner.next();
+            UserInputReader userInputReader = new UserInputReader(scanner);
+            Parameters parameters = userInputReader.readUserInput();
 
-            int rootNote = defaultChoice.equalsIgnoreCase("Y") ? 60 :
-                    validateInput(scanner, "Enter the root note (0-127): ", 0, 127);
-            int octaves = defaultChoice.equalsIgnoreCase("Y") ? 6 :
-                    validateInput(scanner, "Enter the number of octaves (1-7): ", 1, 7);
-            double displacement = defaultChoice.equalsIgnoreCase("Y") ? 2 :
-                    validateInput(scanner, "Enter the displacement factor (0-24): ", 0, 24);
-            double duration = defaultChoice.equalsIgnoreCase("Y") ? 2 :
-                    validateInput(scanner, "Enter the duration factor (1-24): ", 1, 24);
-            int iterations = defaultChoice.equalsIgnoreCase("Y") ? 1 :
-                    validateInput(scanner, "Enter the number of iterations (0-100) (but keep it low to start): ", 0, 100);
-
-            fractalMusicService.generateAndPlayFractalMusic(rootNote, octaves, displacement, duration, iterations);
+            fractalMusicService.generateAndPlayFractalMusic(
+                    parameters.getRootNote(),
+                    parameters.getOctaves(),
+                    parameters.getDisplacement(),
+                    parameters.getDuration(),
+                    parameters.getIterations()
+            );
 
             System.out.print("Do you want to save the generated music? (Y/N): ");
             String saveChoice = scanner.next();
@@ -36,18 +32,6 @@ public class Main {
             }
         } catch (Exception e) {
             e.printStackTrace();
-        }
-    }
-
-    private static int validateInput(Scanner scanner, String msg, int start, int end) {
-        while (true) {
-            System.out.print(msg);
-            int input = scanner.nextInt();
-            if (input >= start && input <= end) {
-                return input;
-            } else {
-                System.out.println("Invalid input!");
-            }
         }
     }
 }

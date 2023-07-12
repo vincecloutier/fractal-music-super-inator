@@ -4,8 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="13887364-90ae-4abf-a92d-f626d73c3266" name="Changes" comment="added default paramaters">
+    <list default="true" id="13887364-90ae-4abf-a92d-f626d73c3266" name="Changes" comment="successfully validating input">
+      <change afterPath="$PROJECT_DIR$/src/FractalMusicGeneratorTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Parameters.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/UserInputReader.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/fractal-music-super-inator.iml" beforeDir="false" afterPath="$PROJECT_DIR$/fractal-music-super-inator.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/FractalMusicGenerator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/FractalMusicGenerator.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
     </list>
@@ -32,6 +36,10 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "Downloaded.Files.Path.Enabled": "false",
+    "Repository.Attach.Annotations": "false",
+    "Repository.Attach.JavaDocs": "false",
+    "Repository.Attach.Sources": "false",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
@@ -51,7 +59,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1689177138145</updated>
-      <workItem from="1689177139168" duration="2900000" />
+      <workItem from="1689177139168" duration="4219000" />
     </task>
     <task id="LOCAL-00001" summary="now playing well">
       <created>1689177662052</created>
@@ -74,7 +82,14 @@
       <option name="project" value="LOCAL" />
       <updated>1689179143598</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="successfully validating input">
+      <created>1689180075758</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1689180075758</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -84,6 +99,7 @@
     <MESSAGE value="now playing well" />
     <MESSAGE value="clean architecture" />
     <MESSAGE value="added default paramaters" />
-    <option name="LAST_COMMIT_MESSAGE" value="added default paramaters" />
+    <MESSAGE value="successfully validating input" />
+    <option name="LAST_COMMIT_MESSAGE" value="successfully validating input" />
   </component>
 </project>
