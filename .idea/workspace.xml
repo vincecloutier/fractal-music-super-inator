@@ -4,13 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="13887364-90ae-4abf-a92d-f626d73c3266" name="Changes" comment="successfully validating input">
-      <change afterPath="$PROJECT_DIR$/src/FractalMusicGeneratorTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Parameters.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/UserInputReader.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/fractal-music-super-inator.iml" beforeDir="false" afterPath="$PROJECT_DIR$/fractal-music-super-inator.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/FractalMusicGenerator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/FractalMusicGenerator.java" afterDir="false" />
+    <list default="true" id="13887364-90ae-4abf-a92d-f626d73c3266" name="Changes" comment="seperated out code smells">
       <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -59,7 +53,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1689177138145</updated>
-      <workItem from="1689177139168" duration="4219000" />
+      <workItem from="1689177139168" duration="4488000" />
     </task>
     <task id="LOCAL-00001" summary="now playing well">
       <created>1689177662052</created>
@@ -89,7 +83,14 @@
       <option name="project" value="LOCAL" />
       <updated>1689180075758</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="seperated out code smells">
+      <created>1689181396999</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1689181396999</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -100,6 +101,7 @@
     <MESSAGE value="clean architecture" />
     <MESSAGE value="added default paramaters" />
     <MESSAGE value="successfully validating input" />
-    <option name="LAST_COMMIT_MESSAGE" value="successfully validating input" />
+    <MESSAGE value="seperated out code smells" />
+    <option name="LAST_COMMIT_MESSAGE" value="seperated out code smells" />
   </component>
 </project>

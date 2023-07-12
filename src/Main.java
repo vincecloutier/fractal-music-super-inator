@@ -9,26 +9,33 @@ public class Main {
         System.out.println("Just leave any prompt blank for a default value.");
 
         try (Scanner scanner = new Scanner(System.in)) {
-            UserInputReader userInputReader = new UserInputReader(scanner);
-            Parameters parameters = userInputReader.readUserInput();
+            boolean keepRunning = true;
+            while (keepRunning) {
+                UserInputReader userInputReader = new UserInputReader(scanner);
+                Parameters parameters = userInputReader.readUserInput();
 
-            fractalMusicService.generateAndPlayFractalMusic(
-                    parameters.getRootNote(),
-                    parameters.getOctaves(),
-                    parameters.getDisplacement(),
-                    parameters.getDuration(),
-                    parameters.getIterations()
-            );
+                fractalMusicService.generateAndPlayFractalMusic(
+                        parameters.getRootNote(),
+                        parameters.getOctaves(),
+                        parameters.getDisplacement(),
+                        parameters.getDuration(),
+                        parameters.getIterations()
+                );
 
-            System.out.print("Do you want to save the generated music? (Y/N): ");
-            String saveChoice = scanner.next();
-            if (saveChoice.equalsIgnoreCase("Y")) {
-                System.out.print("Enter the file path to save the music: ");
-                String filePath = scanner.next();
-                fractalMusicService.saveFractalMusic(filePath);
-                System.out.println("Fractal music saved.");
-            } else {
-                System.out.println("Fractal music not saved.");
+                System.out.print("Do you want to save the generated music? (Y/N): ");
+                String saveChoice = scanner.next();
+                if (saveChoice.equalsIgnoreCase("Y")) {
+                    System.out.print("Enter the file path to save the music: ");
+                    String filePath = scanner.next();
+                    fractalMusicService.saveFractalMusic(filePath);
+                    System.out.println("Fractal music saved.");
+                } else {
+                    System.out.println("Fractal music not saved.");
+                }
+
+                System.out.print("Do you want to generate another song? (Y/N): ");
+                String continueChoice = scanner.next();
+                keepRunning = continueChoice.equalsIgnoreCase("Y");
             }
         } catch (Exception e) {
             e.printStackTrace();
