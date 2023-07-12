@@ -19,7 +19,7 @@ public class FractalMusicService {
         midiPlayer.playSequence(sequence);
     }
 
-    public void saveFractalMusic() throws Exception {
-        MidiSystem.write(sequence, 1, new java.io.File("fractal_music.mid"));
+    public void saveFractalMusic(String filePath) throws Exception {
+        MidiSystem.write(sequence, 1, new java.io.File(filePath));
     }
 }
