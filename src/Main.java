@@ -2,7 +2,7 @@ import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) {
-        FractalMusicService fractalMusicService = new FractalMusicService();
+        FractalMusicFacade fractalMusicFacade = new FractalMusicFacade();
 
         System.out.println("Welcome to the Fractal-Music-Super-Inator-3000.");
         System.out.println("Please note the randomly generated music does not intentionally infringe upon any specific copyrights.");
@@ -13,15 +13,16 @@ public class Main {
             while (keepRunning) {
                 UserInputReader userInputReader = new UserInputReader(scanner);
                 Parameters parameters = userInputReader.readUserInput();
-                fractalMusicService.generateAndPlayFractalMusic(parameters);
+
+                fractalMusicFacade.generateMusicSequence(parameters);
+                fractalMusicFacade.playMusicSequence();
 
                 System.out.print("Do you want to save the generated music? (Y/N): ");
                 String saveChoice = scanner.next();
                 if (saveChoice.equalsIgnoreCase("Y")) {
                     System.out.print("Enter the file path to save the music: ");
                     String filePath = scanner.next();
-                    fractalMusicService.saveFractalMusic(filePath);
-                    System.out.println("Fractal music saved.");
+                    fractalMusicFacade.saveMusicSequence(filePath);
                 } else {
                     System.out.println("Fractal music not saved.");
                 }
