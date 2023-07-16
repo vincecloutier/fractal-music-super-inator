@@ -14,8 +14,8 @@ public class FractalMusicService {
         fractalMusicGenerator = new FractalMusicGenerator();
     }
 
-    public void generateAndPlayFractalMusic(int rootNote, int octaves, double displacement, double duration, int iterations) throws InvalidMidiDataException, MidiUnavailableException {
-        sequence = fractalMusicGenerator.generateFractalMusic(rootNote, octaves, displacement, duration, iterations);
+    public void generateAndPlayFractalMusic(Parameters parameters) throws InvalidMidiDataException, MidiUnavailableException {
+        sequence = fractalMusicGenerator.generateFractalMusic(parameters);
         midiPlayer.playSequence(sequence);
     }
 

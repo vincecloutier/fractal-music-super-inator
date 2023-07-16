@@ -13,14 +13,7 @@ public class Main {
             while (keepRunning) {
                 UserInputReader userInputReader = new UserInputReader(scanner);
                 Parameters parameters = userInputReader.readUserInput();
-
-                fractalMusicService.generateAndPlayFractalMusic(
-                        parameters.getRootNote(),
-                        parameters.getOctaves(),
-                        parameters.getDisplacement(),
-                        parameters.getDuration(),
-                        parameters.getIterations()
-                );
+                fractalMusicService.generateAndPlayFractalMusic(parameters);
 
                 System.out.print("Do you want to save the generated music? (Y/N): ");
                 String saveChoice = scanner.next();

@@ -1,16 +1,14 @@
 import javax.sound.midi.*;
 
 public class FractalMusicGenerator {
-    public Sequence generateFractalMusic(int rootNote, int octaves, double displacement, double duration, int iterations) throws InvalidMidiDataException {
-        int totalNotes = (int) Math.pow(2, octaves);
-        totalNotes = Math.max(1, totalNotes);  // Ensure totalNotes is at least 1
+    public Sequence generateFractalMusic(Parameters p) throws InvalidMidiDataException {
 
-        int[] notes = new int[totalNotes];
-        notes[0] = rootNote;
+        int[] notes = new int[p.getTotalNotes()];
+        notes[0] = p.getRootNote();
 
         // Generate the fractal pattern
-        for (int i = 1; i < totalNotes; i++) {
-            int nextNote = (int) (notes[i - 1] + Math.random() * displacement * 2 - displacement);
+        for (int i = 1; i < p.getTotalNotes(); i++) {
+            int nextNote = (int) (notes[i - 1] + Math.random() * p.getDisplacement() * 2 - p.getDisplacement());
             nextNote = Math.max(0, Math.min(127, nextNote)); // ensure note is within valid MIDI range
             notes[i] = nextNote;
         }
@@ -25,13 +23,13 @@ public class FractalMusicGenerator {
 
         // Add the notes to the MIDI track
         int tick = 0;
-        for (int i = 0; i < iterations; i++) {
-            for (int j = 0; j < totalNotes - 1; j++) {
+        for (int i = 0; i < p.getIterations(); i++) {
+            for (int j = 0; j < p.getTotalNotes() - 1; j++) {
                 int note = notes[j];
                 int nextNote = notes[j + 1];
 
                 // Calculate the duration based on the displacement
-                long noteDuration = (long) (duration * Math.abs(nextNote - note));
+                long noteDuration = (long) (p.getDuration() * Math.abs(nextNote - note));
 
                 // Add the note to the MIDI track
                 track.add(createNoteOnEvent(channel, note, tick));
