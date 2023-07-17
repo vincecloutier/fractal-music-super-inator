@@ -1,3 +1,5 @@
+package music_generation;
+
 public class FractalTreeMusicGenerator implements MusicGenerationStrategy {
 
     @Override

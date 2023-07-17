@@ -1,3 +1,5 @@
+package midi;
+
 import javax.sound.midi.*;
 
 public class MidiPlayer {

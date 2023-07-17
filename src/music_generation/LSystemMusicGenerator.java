@@ -1,3 +1,5 @@
+package music_generation;
+
 public class LSystemMusicGenerator implements MusicGenerationStrategy {
 
     @Override

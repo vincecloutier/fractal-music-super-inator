@@ -1,3 +1,8 @@
+import midi.MidiPlayer;
+import midi.MidiSequencer;
+import music_generation.MusicGenerationStrategy;
+import music_generation.Parameters;
+
 import javax.sound.midi.*;
 import java.io.IOException;
 

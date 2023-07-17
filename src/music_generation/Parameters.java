@@ -1,3 +1,5 @@
+package music_generation;
+
 public class Parameters {
     private final int rootNote;
     private final int octaves;

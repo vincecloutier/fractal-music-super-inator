@@ -1,3 +1,5 @@
+package music_generation;
+
 public class BrownianMusicGenerator implements MusicGenerationStrategy {
     @Override
     public int[] generateMusic(Parameters p) {
