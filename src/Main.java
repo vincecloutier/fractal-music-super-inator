@@ -9,16 +9,18 @@ public class Main {
 
         try (Scanner scanner = new Scanner(System.in)) {
             boolean keepRunning = true;
+            UserInputReader userInputReader = new UserInputReader(scanner);
+
             while (keepRunning) {
                 Parameters parameters = new Parameters();
+                MusicGenerationStrategy strategy = userInputReader.readStrategyChoice();
 
                 System.out.print("Would you like to enter custom parameters? (Y/N): ");
                 if (scanner.next().equalsIgnoreCase("Y")) {
-                    UserInputReader userInputReader = new UserInputReader(scanner);
                     parameters = userInputReader.readCustomParameters();
                 }
 
-                fractalMusicFacade.generateMusicSequence(parameters);
+                fractalMusicFacade.generateMusicSequence(strategy, parameters);
                 fractalMusicFacade.playMusicSequence();
 
                 System.out.print("Do you want to save the generated music? (Y/N): ");

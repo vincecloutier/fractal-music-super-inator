@@ -1,16 +1,16 @@
-
 public class FractalMusicGenerator {
-    public static int[] generateFractalMusic(Parameters p) {
 
-        int[] notes = new int[p.getTotalNotes()];
-        notes[0] = p.getRootNote();
+    private MusicGenerationStrategy strategy;
 
-        // Generate the fractal pattern
-        for (int i = 1; i < p.getTotalNotes(); i++) {
-            int nextNote = (int) (notes[i - 1] + Math.random() * p.getDisplacement() * 2 - p.getDisplacement());
-            nextNote = Math.max(0, Math.min(127, nextNote)); // ensure note is within valid MIDI range
-            notes[i] = nextNote;
-        }
-        return notes;
+    public FractalMusicGenerator(MusicGenerationStrategy strategy) {
+        this.strategy = strategy;
+    }
+
+    public void setStrategy(MusicGenerationStrategy strategy) {
+        this.strategy = strategy;
+    }
+
+    public int[] generateMusic(Parameters p) {
+        return strategy.generateMusic(p);
     }
 }
