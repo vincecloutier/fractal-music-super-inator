@@ -1,4 +1,4 @@
-package music_generation;
+package model;
 
 public class Parameters {
     private final int rootNote;

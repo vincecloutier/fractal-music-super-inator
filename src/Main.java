@@ -1,4 +1,5 @@
 import midi.MidiFacade;
+import model.Parameters;
 import music_generation.*;
 import java.util.Scanner;
 

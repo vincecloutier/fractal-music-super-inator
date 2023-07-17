@@ -1,6 +1,5 @@
 package midi;
-
-import music_generation.Parameters;
+import model.Parameters;
 import javax.sound.midi.*;
 
 public class MidiSequencer {

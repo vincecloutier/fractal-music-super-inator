@@ -1,4 +1,5 @@
 package music_generation;
+import model.Parameters;
 
 public class BrownianMusicGenerator implements MusicGenerationStrategy {
     @Override
