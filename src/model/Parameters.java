@@ -8,6 +8,15 @@ public class Parameters {
     private final int iterations;
     private final int totalNotes;
 
+
+    /**
+     * Constructs Parameters with specific values for music generation.
+     * @param rootNote the root note from which the music starts
+     * @param octaves the number of octaves used in the music
+     * @param displacement the displacement value for music generation algorithms
+     * @param duration the duration of each note in the music
+     * @param iterations the number of iterations for music generation algorithms
+     */
     public Parameters(int rootNote, int octaves, double displacement, double duration, int iterations) {
         this.rootNote = rootNote;
         this.octaves = octaves;
@@ -18,6 +27,9 @@ public class Parameters {
         this.totalNotes = Math.max(1, tn); // Ensure total notes is at least 1
     }
 
+    /**
+     * Constructs Parameters with default values.
+     */
     public Parameters() {
         this.rootNote = 60;
         this.octaves = 7;

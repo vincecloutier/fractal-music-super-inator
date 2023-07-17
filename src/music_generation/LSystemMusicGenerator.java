@@ -2,6 +2,16 @@ package music_generation;
 import model.Parameters;
 
 public class LSystemMusicGenerator implements MusicGenerationStrategy {
+    /**
+     * Generates a sequence of notes based on an L-system rule.
+     * The initial note is defined by the root note in the parameters.
+     * Subsequent notes are calculated by applying an L-system rule (F -> FF+).
+     * Every second note repeats the previous note and the others increment by one.
+     * This ensures the notes are within the valid MIDI range.
+     *
+     * @param p the parameters for music generation, including root note and total notes
+     * @return an array of MIDI notes generated
+     */
     @Override
     public int[] generateMusic(Parameters p) {
         int[] notes = new int[p.getTotalNotes()];
