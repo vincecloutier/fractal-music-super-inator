@@ -16,6 +16,15 @@ public class Parameters {
         this.totalNotes = Math.max(1, tn); // Ensure total notes is at least 1
     }
 
+    public Parameters() {
+        this.rootNote = 60;
+        this.octaves = 7;
+        this.displacement = 2.0;
+        this.duration = 2.0;
+        this.iterations = 2;
+        this.totalNotes = 128;
+    }
+
     public int getRootNote() {
         return rootNote;
     }

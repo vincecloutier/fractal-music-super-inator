@@ -12,7 +12,7 @@ public class UserInputReader {
         String defaultChoice = scanner.next();
 
         if (defaultChoice.equalsIgnoreCase("Y")) {
-            return new Parameters(60, 7, 2, 2, 2);
+            return new Parameters();
         }
 
         int rootNote = validateInput("Enter the root note (0-127): ", 0, 127);
