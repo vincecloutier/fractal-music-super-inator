@@ -6,30 +6,29 @@ public class Main {
 
         System.out.println("Welcome to the Fractal-Music-Super-Inator-3000.");
         System.out.println("Please note the randomly generated music does not intentionally infringe upon any specific copyrights.");
-        System.out.println("Just leave any prompt blank for a default value.");
 
         try (Scanner scanner = new Scanner(System.in)) {
             boolean keepRunning = true;
             while (keepRunning) {
-                UserInputReader userInputReader = new UserInputReader(scanner);
-                Parameters parameters = userInputReader.readUserInput();
+                Parameters parameters = new Parameters();
+
+                System.out.print("Would you like to enter custom parameters? (Y/N): ");
+                if (scanner.next().equalsIgnoreCase("Y")) {
+                    UserInputReader userInputReader = new UserInputReader(scanner);
+                    parameters = userInputReader.readCustomParameters();
+                }
 
                 fractalMusicFacade.generateMusicSequence(parameters);
                 fractalMusicFacade.playMusicSequence();
 
                 System.out.print("Do you want to save the generated music? (Y/N): ");
-                String saveChoice = scanner.next();
-                if (saveChoice.equalsIgnoreCase("Y")) {
+                if (scanner.next().equalsIgnoreCase("Y")) {
                     System.out.print("Enter the file path to save the music: ");
-                    String filePath = scanner.next();
-                    fractalMusicFacade.saveMusicSequence(filePath);
-                } else {
-                    System.out.println("Fractal music not saved.");
+                    fractalMusicFacade.saveMusicSequence(scanner.next());
                 }
 
                 System.out.print("Do you want to generate another song? (Y/N): ");
-                String continueChoice = scanner.next();
-                keepRunning = continueChoice.equalsIgnoreCase("Y");
+                keepRunning = scanner.next().equalsIgnoreCase("Y");
             }
         } catch (Exception e) {
             e.printStackTrace();

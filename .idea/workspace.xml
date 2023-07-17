@@ -4,10 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="13887364-90ae-4abf-a92d-f626d73c3266" name="Changes" comment="successfully passing in parameter object whole">
+    <list default="true" id="13887364-90ae-4abf-a92d-f626d73c3266" name="Changes" comment="overloaded constructor for default parameters">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/FractalMusicGeneratorTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/FractalMusicGeneratorTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Parameters.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Parameters.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/UserInputReader.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/UserInputReader.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -111,7 +111,14 @@
       <option name="project" value="LOCAL" />
       <updated>1689530216973</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="overloaded constructor for default parameters">
+      <created>1689596079038</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1689596079038</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -124,6 +131,7 @@
     <MESSAGE value="successfully validating input" />
     <MESSAGE value="seperated out code smells" />
     <MESSAGE value="successfully passing in parameter object whole" />
-    <option name="LAST_COMMIT_MESSAGE" value="successfully passing in parameter object whole" />
+    <MESSAGE value="overloaded constructor for default parameters" />
+    <option name="LAST_COMMIT_MESSAGE" value="overloaded constructor for default parameters" />
   </component>
 </project>
