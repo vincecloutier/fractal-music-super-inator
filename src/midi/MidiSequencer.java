@@ -1,34 +1,29 @@
 package midi;
 
 import music_generation.Parameters;
-
 import javax.sound.midi.*;
 
 public class MidiSequencer {
+    private static final int SEQUENCE_RESOLUTION = 24;
+    private static final int PIANO_INSTRUMENT = 0;
+    private static final int VELOCITY = 100;
+    private static final int CHANNEL = 0;
 
     public static Sequence createSequence(int[] notes, Parameters p) throws InvalidMidiDataException {
-        // Create a new sequence and a track
-        Sequence sequence = new Sequence(Sequence.PPQ, 24);
+        Sequence sequence = new Sequence(Sequence.PPQ, SEQUENCE_RESOLUTION);
         Track track = sequence.createTrack();
 
-        // Set the instrument to piano
-        int channel = 0;
-        track.add(setPianoMidiEvent(channel));
+        // set instrument to piano
+        track.add(createMidiEvent(ShortMessage.PROGRAM_CHANGE, PIANO_INSTRUMENT, 0, 0));
 
-        // Add the notes to the MIDI track
         int tick = 0;
         for (int i = 0; i < p.getIterations(); i++) {
             for (int j = 0; j < p.getTotalNotes() - 1; j++) {
                 int note = notes[j];
                 int nextNote = notes[j + 1];
-
-                // Calculate the duration based on the displacement
                 long noteDuration = (long) (p.getDuration() * Math.abs(nextNote - note));
-
-                // Add the note to the MIDI track
-                track.add(createNoteOnEvent(channel, note, tick));
-                track.add(createNoteOffEvent(channel, note, tick + noteDuration));
-
+                track.add(createMidiEvent(ShortMessage.NOTE_ON, note, VELOCITY, tick)); // note on
+                track.add(createMidiEvent(ShortMessage.NOTE_OFF, note, VELOCITY, tick + noteDuration)); // note off
                 tick += noteDuration;
             }
         }
@@ -36,21 +31,9 @@ public class MidiSequencer {
         return sequence;
     }
 
-    private static MidiEvent createNoteOnEvent(int channel, int note, long tick) throws InvalidMidiDataException {
+    private static MidiEvent createMidiEvent(int command, int note, int velocity, long tick) throws InvalidMidiDataException {
         ShortMessage message = new ShortMessage();
-        message.setMessage(ShortMessage.NOTE_ON, channel, note, 100);
+        message.setMessage(command, MidiSequencer.CHANNEL, note, velocity);
         return new MidiEvent(message, tick);
-    }
-
-    private static MidiEvent createNoteOffEvent(int channel, int note, long tick) throws InvalidMidiDataException {
-        ShortMessage message = new ShortMessage();
-        message.setMessage(ShortMessage.NOTE_OFF, channel, note, 100);
-        return new MidiEvent(message, tick);
-    }
-
-    private static MidiEvent setPianoMidiEvent(int channel) throws InvalidMidiDataException {
-        ShortMessage message = new ShortMessage();
-        message.setMessage(ShortMessage.PROGRAM_CHANGE, channel, 0, 0);
-        return new MidiEvent(message, 0);
     }
 }
