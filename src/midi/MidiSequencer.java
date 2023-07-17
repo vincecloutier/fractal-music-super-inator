@@ -8,6 +8,14 @@ public class MidiSequencer {
     private static final int VELOCITY = 100;
     private static final int CHANNEL = 0;
 
+    /**
+     * Creates a MIDI sequence based on the given notes and parameters.
+     *
+     * @param notes      an array of integers representing the MIDI notes
+     * @param p the parameters to be used for creating the MIDI sequence
+     * @return the created MIDI sequence
+     * @throws InvalidMidiDataException if the MIDI data is invalid
+     */
     public static Sequence createSequence(int[] notes, Parameters p) throws InvalidMidiDataException {
         Sequence sequence = new Sequence(Sequence.PPQ, SEQUENCE_RESOLUTION);
         Track track = sequence.createTrack();
@@ -30,6 +38,16 @@ public class MidiSequencer {
         return sequence;
     }
 
+    /**
+     * Creates a MIDI event with the specified parameters.
+     *
+     * @param command  the MIDI command for the event (e.g., ShortMessage.NOTE_ON)
+     * @param note     the MIDI note for the event
+     * @param velocity the velocity of the event
+     * @param tick     the tick at which the event occurs in the sequence
+     * @return the created MIDI event
+     * @throws InvalidMidiDataException if the MIDI data is invalid
+     */
     private static MidiEvent createMidiEvent(int command, int note, int velocity, long tick) throws InvalidMidiDataException {
         ShortMessage message = new ShortMessage();
         message.setMessage(command, MidiSequencer.CHANNEL, note, velocity);
