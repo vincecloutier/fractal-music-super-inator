@@ -27,6 +27,8 @@ public class MidiFacade {
     public void playMusicSequence()  {
         try {
             MidiPlayer.playSequence(this.sequence);
+        } catch (IllegalStateException e) {
+            System.out.println("Sequence has not been generated yet.");
         } catch (MidiUnavailableException | InvalidMidiDataException e) {
             System.out.println("There was an issue with playing the music.");
         }
