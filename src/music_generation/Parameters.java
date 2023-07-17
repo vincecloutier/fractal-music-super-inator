@@ -23,7 +23,7 @@ public class Parameters {
         this.octaves = 7;
         this.displacement = 2.0;
         this.duration = 2.0;
-        this.iterations = 2;
+        this.iterations = 1;
         this.totalNotes = 128;
     }
 

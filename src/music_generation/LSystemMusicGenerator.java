@@ -1,7 +1,6 @@
 package music_generation;
 
 public class LSystemMusicGenerator implements MusicGenerationStrategy {
-
     @Override
     public int[] generateMusic(Parameters p) {
         int[] notes = new int[p.getTotalNotes()];

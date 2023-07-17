@@ -1,17 +1,15 @@
-import midi.MidiPlayer;
-import midi.MidiSequencer;
+package midi;
 import music_generation.MusicGenerationStrategy;
 import music_generation.Parameters;
 
 import javax.sound.midi.*;
 import java.io.IOException;
 
-public class FractalMusicFacade {
+public class MidiFacade {
     private Sequence sequence;
 
-    public void generateMusicSequence(MusicGenerationStrategy strategy, Parameters parameters) {
+    public void generateMusicSequence(int[] notes, Parameters parameters) {
         try {
-            int[] notes = strategy.generateMusic(parameters);
             this.sequence = MidiSequencer.createSequence(notes, parameters);
         } catch (InvalidMidiDataException e) {
             System.out.println("There was an issue with generating the music.");
