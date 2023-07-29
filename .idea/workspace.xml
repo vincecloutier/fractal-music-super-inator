@@ -5,29 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="a1627f95-5a6c-4b2d-85c5-0066ac4213a2" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gradlew" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gradlew.bat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/settings.gradle" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/midi/MidiFacade.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/midi/MidiPlayer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/midi/MidiSequencer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/model/Parameters.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/music_generation/BrownianMusicGenerator.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/music_generation/FractalTreeMusicGenerator.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/music_generation/LSystemMusicGenerator.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/music_generation/MusicGenerationStrategy.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/music_generation/MusicGenerator.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/midi/MidiFacadeTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/music_generation/MusicGenerationTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/fractal-music-super-inator.iml" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -39,8 +17,31 @@
       <ProjectState />
     </projectState>
   </component>
+  <component name="ExternalProjectsManager">
+    <system id="GRADLE">
+      <state>
+        <task path="$PROJECT_DIR$">
+          <activation />
+        </task>
+        <projects_view>
+          <tree_state>
+            <expand>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="fractal-music-generator" type="f1a62948:ProjectNode" />
+              </path>
+            </expand>
+            <select />
+          </tree_state>
+        </projects_view>
+      </state>
+    </system>
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
   </component>
   <component name="ProjectId" id="2TGFRswJw6oco1ZpoIwcISiBPRe" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
@@ -49,20 +50,20 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "git-widget-placeholder": "master",
-    "last_opened_file_path": "/Users/vincecloutier/Repositories/fractal-music-generator/src/main/java",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/Users/vincecloutier/Repositories/fractal-music-generator/src/main/java&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/src/main/java" />
@@ -114,6 +115,7 @@
       <option name="presentableId" value="Default" />
       <updated>1690661506253</updated>
       <workItem from="1690661507268" duration="362000" />
+      <workItem from="1690663426423" duration="5000" />
     </task>
     <servers />
   </component>
