@@ -4,192 +4,120 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="13887364-90ae-4abf-a92d-f626d73c3266" name="Changes" comment="tested !">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    <list default="true" id="a1627f95-5a6c-4b2d-85c5-0066ac4213a2" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gradlew" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gradlew.bat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/settings.gradle" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/midi/MidiFacade.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/midi/MidiPlayer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/midi/MidiSequencer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/model/Parameters.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/music_generation/BrownianMusicGenerator.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/music_generation/FractalTreeMusicGenerator.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/music_generation/LSystemMusicGenerator.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/music_generation/MusicGenerationStrategy.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/music_generation/MusicGenerator.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/midi/MidiFacadeTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/music_generation/MusicGenerationTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="FileTemplateManagerImpl">
-    <option name="RECENT_TEMPLATES">
-      <list>
-        <option value="Class" />
-      </list>
-    </option>
+  <component name="ExternalProjectsData">
+    <projectState path="$PROJECT_DIR$">
+      <ProjectState />
+    </projectState>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="MarkdownSettingsMigration">
-    <option name="stateVersion" value="1" />
-  </component>
-  <component name="ProjectId" id="2STinPZLAGjNEvfrBzjsrG7Gn4Y" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
-    <ConfirmationsSetting value="1" id="Add" />
-  </component>
+  <component name="ProjectId" id="2TGFRswJw6oco1ZpoIwcISiBPRe" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
+    <option name="autoscrollToSource" value="true" />
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
-    "Downloaded.Files.Path.Enabled": "false",
-    "Repository.Attach.Annotations": "false",
-    "Repository.Attach.JavaDocs": "false",
-    "Repository.Attach.Sources": "false",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "WebServerToolWindowFactoryState": "false",
     "git-widget-placeholder": "master",
+    "last_opened_file_path": "/Users/vincecloutier/Repositories/fractal-music-generator/src/main/java",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "project.structure.last.edited": "Modules",
-    "project.structure.proportion": "0.0",
-    "project.structure.side.proportion": "0.2",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$" />
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/main/java" />
     </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/main/java/music_generation" />
+      <recent name="$PROJECT_DIR$/src/main/java/model" />
+      <recent name="$PROJECT_DIR$/src/main/java/midi" />
+    </key>
+    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="" />
+    </key>
+  </component>
+  <component name="RunManager">
+    <configuration name="Tests in 'fractal-music-generator.test'" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value=":test" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <ForceTestExec>true</ForceTestExec>
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Gradle.Tests in 'fractal-music-generator.test'" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="13887364-90ae-4abf-a92d-f626d73c3266" name="Changes" comment="" />
-      <created>1689177138145</created>
+      <changelist id="a1627f95-5a6c-4b2d-85c5-0066ac4213a2" name="Changes" comment="" />
+      <created>1690661506253</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1689177138145</updated>
-      <workItem from="1689177139168" duration="4488000" />
-      <workItem from="1689608013179" duration="2693000" />
+      <updated>1690661506253</updated>
+      <workItem from="1690661507268" duration="362000" />
     </task>
-    <task id="LOCAL-00001" summary="now playing well">
-      <created>1689177662052</created>
-      <option name="number" value="00001" />
-      <option name="presentableId" value="LOCAL-00001" />
-      <option name="project" value="LOCAL" />
-      <updated>1689177662052</updated>
-    </task>
-    <task id="LOCAL-00002" summary="clean architecture">
-      <created>1689178367385</created>
-      <option name="number" value="00002" />
-      <option name="presentableId" value="LOCAL-00002" />
-      <option name="project" value="LOCAL" />
-      <updated>1689178367385</updated>
-    </task>
-    <task id="LOCAL-00003" summary="added default paramaters">
-      <created>1689179143598</created>
-      <option name="number" value="00003" />
-      <option name="presentableId" value="LOCAL-00003" />
-      <option name="project" value="LOCAL" />
-      <updated>1689179143598</updated>
-    </task>
-    <task id="LOCAL-00004" summary="successfully validating input">
-      <created>1689180075758</created>
-      <option name="number" value="00004" />
-      <option name="presentableId" value="LOCAL-00004" />
-      <option name="project" value="LOCAL" />
-      <updated>1689180075758</updated>
-    </task>
-    <task id="LOCAL-00005" summary="seperated out code smells">
-      <created>1689181396999</created>
-      <option name="number" value="00005" />
-      <option name="presentableId" value="LOCAL-00005" />
-      <option name="project" value="LOCAL" />
-      <updated>1689181396999</updated>
-    </task>
-    <task id="LOCAL-00006" summary="successfully passing in parameter object whole">
-      <created>1689530216973</created>
-      <option name="number" value="00006" />
-      <option name="presentableId" value="LOCAL-00006" />
-      <option name="project" value="LOCAL" />
-      <updated>1689530216973</updated>
-    </task>
-    <task id="LOCAL-00007" summary="overloaded constructor for default parameters">
-      <created>1689596079038</created>
-      <option name="number" value="00007" />
-      <option name="presentableId" value="LOCAL-00007" />
-      <option name="project" value="LOCAL" />
-      <updated>1689596079038</updated>
-    </task>
-    <task id="LOCAL-00008" summary="updated main and getting user parameters to be clearer">
-      <created>1689596740110</created>
-      <option name="number" value="00008" />
-      <option name="presentableId" value="LOCAL-00008" />
-      <option name="project" value="LOCAL" />
-      <updated>1689596740110</updated>
-    </task>
-    <task id="LOCAL-00009" summary="successfully allowing user to select one of three types of fractal music algo's">
-      <created>1689602317147</created>
-      <option name="number" value="00009" />
-      <option name="presentableId" value="LOCAL-00009" />
-      <option name="project" value="LOCAL" />
-      <updated>1689602317147</updated>
-    </task>
-    <task id="LOCAL-00010" summary="seperated it out into use cases">
-      <created>1689603578725</created>
-      <option name="number" value="00010" />
-      <option name="presentableId" value="LOCAL-00010" />
-      <option name="project" value="LOCAL" />
-      <updated>1689603578725</updated>
-    </task>
-    <task id="LOCAL-00011" summary="simplified create midi event">
-      <created>1689603976348</created>
-      <option name="number" value="00011" />
-      <option name="presentableId" value="LOCAL-00011" />
-      <option name="project" value="LOCAL" />
-      <updated>1689603976348</updated>
-    </task>
-    <task id="LOCAL-00012" summary="implemented full strategy design pattern">
-      <created>1689605576046</created>
-      <option name="number" value="00012" />
-      <option name="presentableId" value="LOCAL-00012" />
-      <option name="project" value="LOCAL" />
-      <updated>1689605576046</updated>
-    </task>
-    <task id="LOCAL-00013" summary="packaging">
-      <created>1689605757419</created>
-      <option name="number" value="00013" />
-      <option name="presentableId" value="LOCAL-00013" />
-      <option name="project" value="LOCAL" />
-      <updated>1689605757419</updated>
-    </task>
-    <task id="LOCAL-00014" summary="tested !">
-      <created>1689608805553</created>
-      <option name="number" value="00014" />
-      <option name="presentableId" value="LOCAL-00014" />
-      <option name="project" value="LOCAL" />
-      <updated>1689608805553</updated>
-    </task>
-    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
-  </component>
-  <component name="VcsManagerConfiguration">
-    <MESSAGE value="now playing well" />
-    <MESSAGE value="clean architecture" />
-    <MESSAGE value="added default paramaters" />
-    <MESSAGE value="successfully validating input" />
-    <MESSAGE value="seperated out code smells" />
-    <MESSAGE value="successfully passing in parameter object whole" />
-    <MESSAGE value="overloaded constructor for default parameters" />
-    <MESSAGE value="updated main and getting user parameters to be clearer" />
-    <MESSAGE value="successfully allowing user to select one of three types of fractal music algo's" />
-    <MESSAGE value="seperated it out into use cases" />
-    <MESSAGE value="simplified create midi event" />
-    <MESSAGE value="implemented full strategy design pattern" />
-    <MESSAGE value="packaging" />
-    <MESSAGE value="tested !" />
-    <option name="LAST_COMMIT_MESSAGE" value="tested !" />
   </component>
 </project>
