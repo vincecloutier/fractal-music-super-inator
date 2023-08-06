@@ -15,7 +15,7 @@ Users can create music using a variety of algorithms such as Brownian motion, fr
 ### Design Patterns
 The application uses the Strategy Pattern in the form of different music generation algorithms (see the `music_generation` package).
 This allows for easy extension of the application with new algorithms without modifying the existing codebase. <br>
-We also use the Facade pattern to make it easier to control various Midi interactions while respecting the SRP (see the `midi` package). 
+The Facade pattern is also used to make it easier to control various Midi interactions while respecting the SRP (see the `midi` package). 
 
 ### Development Environment
 The application was developed using `OpenJDK-18`. <br>
@@ -23,12 +23,9 @@ The unit tests for the application were written using the `JUnit 5.8.1` testing 
 
 ### Code Quality
 There are currently no significant code smells and while the application adheres to most of the principles of SOLID and CA, we do have some violations:
-- **ISP**: We force `MidiSequencer` and the `MusicGenerator`'s to use parameter's they don't really need.
+- **ISP**: Currently `MidiSequencer` and the `MusicGenerator`'s are forced to use parameter's they don't really need.
   - We could probably solve this by creating two separate objects or by increasing coupling (so that we can pass only the parameters needed) 
   but I felt neither was really necessary.  
-- **CA**: We don't have an explicit CA structure, and our packages are organized by Use Case not level.
+- **CA**: There's no explicit CA structure, and our packages are organized by Use Case not level.
   - Despite this, I feel that the heart of CA is to depend only upwards in level, which is something we do conform to.
-  This is why it didn't feel necessary to add the additional complexity of a formal CA structure.
-
-
-
+  This is why it didn't feel necessary to add the additional complexity of a formal CA packaging structure.
